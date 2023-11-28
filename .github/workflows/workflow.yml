@@ -5,7 +5,7 @@ jobs:
   build:
     name: Install and build
     runs-on: ubuntu-latest
-    if: contains(github.event.head_commit.message, 'gen build')
+    if: contains(github.event.head_commit.message, 'github actions - gen build')
     
     steps:
       - uses: actions/checkout@v3
@@ -17,7 +17,7 @@ jobs:
         uses: expo/expo-github-action@v8
         with:
           eas-version: latest
-          token: ${{ secrets.EXPO_TOKEN }}
+          token: xOhedZB0gXh_9ov40Uzt0gd1wOGIwhu6plESS84l
       - name: Install dependencies
         run: yarn
       - name: Build on EAS
