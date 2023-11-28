@@ -1,0 +1,13 @@
+{
+  "cli": {
+    "version": ">= 2.9.0"
+  },
+  "build": {
+    "preview": {
+      "channel": "preview"
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
