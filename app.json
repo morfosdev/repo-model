@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1b9a9057-f1f8-4898-86b9-2515ed1eae34"
+      }
+    },
+    "owner": "morfos"
   }
 }
