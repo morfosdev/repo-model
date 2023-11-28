@@ -3,8 +3,8 @@
     "version": ">= 2.9.0"
   },
   "build": {
-    "production": {
-      "channel": "production"
+    "preview": {
+      "channel": "preview"
     }
   },
   "submit": {
