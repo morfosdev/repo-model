@@ -20,6 +20,6 @@ jobs:
           token: xOhedZB0gXh_9ov40Uzt0gd1wOGIwhu6plESS84l
       - name: Install dependencies
         run: yarn
-      - name: Build on EAS
+      - name: Update on EAS
         run: eas update --channel preview --message "teste1" --non-interactive
         
