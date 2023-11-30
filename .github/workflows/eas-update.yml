@@ -1,4 +1,4 @@
-name: Generate build expo
+name: Update expo
 on: [push]
 
 jobs:
