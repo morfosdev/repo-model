@@ -24,11 +24,7 @@ jobs:
         run: eas update --channel preview --message "teste1" --non-interactive
       - name: Escreva
         run:
-          echo "This is the lead in sentence for the list" >> $GITHUB_STEP_SUMMARY
-          echo "- Lets add a bullet point" >> $GITHUB_STEP_SUMMARY
-          echo "- Lets add a second bullet point" >> $GITHUB_STEP_SUMMARY
-          echo "- How about a third one?" >> $GITHUB_STEP_SUMMARY
-          echo "escreva algo e mostre -> '${{github.event}}'"
+          echo $GITHUB_OUTPUT
   # setFirebase:
   #   name: set firebase
   #   runs-on: ubuntu-latest
