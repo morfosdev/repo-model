@@ -5,6 +5,8 @@ jobs:
   easUpdate:
     name: Update EAS
     runs-on: ubuntu-latest
+    outputs:
+      output1: ${{ steps.step1.outputs.response }}
     if: contains(github.event.head_commit.message, 'github actions - gen update')
     
     steps:
@@ -21,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - id: step 1
+      - id: step1
         run: eas update --channel preview --message "teste1" --non-interactive
 
       - name: "teste1"
