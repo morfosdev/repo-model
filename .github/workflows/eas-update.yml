@@ -22,6 +22,8 @@ jobs:
         run: yarn
       - name: Update on EAS
         run: eas update --channel preview --message "teste1" --non-interactive
+      - name: Escreva
+        run: echo "escreva algo e mostre -> '${{github}}'"
   # setFirebase:
   #   name: set firebase
   #   runs-on: ubuntu-latest
