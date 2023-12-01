@@ -1,53 +1,41 @@
-name: Reusable workflow
-
-on:
-  workflow_call:
-    # Map the workflow outputs to job outputs
-    outputs:
-      firstword:
-        description: "The first output string"
-        value: ${{ jobs.example_job.outputs.output1 }}
-      secondword:
-        description: "The second output string"
-        value: ${{ jobs.example_job.outputs.output2 }}
+name: Update expo
+on: [push]
 
 jobs:
-  example_job:
-    name: Generate output
+  easUpdate:
+    name: Update EAS
     runs-on: ubuntu-latest
-    # Map the job outputs to step outputs
     outputs:
-      output1: ${{ steps.step1.outputs.firstword }}
-      output2: ${{ steps.step2.outputs.secondword }}
-    steps:
-      - id: step1
-        run: echo "firstword=hello" >> $GITHUB_OUTPUT
-      - id: step2
-        run: echo "secondword=world" >> $GITHUB_OUTPUT
-# name: Update expo
-# on: [push]
-
-# jobs:
-#   easUpdate:
-#     name: Update EAS
-#     runs-on: ubuntu-latest
-#     if: contains(github.event.head_commit.message, 'github actions - gen update')
+      output1: ${{ steps.step1.outputs.response }}
+    if: contains(github.event.head_commit.message, 'github actions - gen update')
     
-#     steps:
-#       - uses: actions/checkout@v3
-#       - uses: actions/setup-node@v3
-#         with:
-#           node-version: 20.x
-#           cache: yarn
-#       - name: Setup Expo and EAS
-#         uses: expo/expo-github-action@v8
-#         with:
-#           eas-version: latest
-#           token: xOhedZB0gXh_9ov40Uzt0gd1wOGIwhu6plESS84l
-#       - name: Install dependencies
-#         run: yarn
-#       - name: Update on EAS
-#         run: eas update --channel preview --message "teste1" --non-interactive
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+          cache: yarn
+      - name: Setup Expo and EAS
+        uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: xOhedZB0gXh_9ov40Uzt0gd1wOGIwhu6plESS84l
+      - name: Install dependencies
+        run: yarn
+
+      - id: step 1
+        run: eas update --channel preview --message "teste1" --non-interactive
+
+      - name: "teste1"
+        run: echo "response=helloWorld" >> $GITHUB_OUTPUT
+
+      - name: Use the value
+        id: step_two
+        run: |
+          printf '%s\n' "$response"
+
+
+
       # - name: Set the value
       #   id: step_one
       #   run: |
@@ -56,6 +44,7 @@ jobs:
       #   id: step_two
       #   run: |
       #     printf '%s\n' "$action_state" # This will output 'yellow'
+      
   # setFirebase:
   #   name: set firebase
   #   runs-on: ubuntu-latest
