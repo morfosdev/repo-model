@@ -5,8 +5,6 @@ jobs:
   easUpdate:
     name: Update EAS
     runs-on: ubuntu-latest
-    outputs:
-      output1: ${{ steps.step1.outputs.response }}
     if: contains(github.event.head_commit.message, 'github actions - gen update')
     
     steps:
