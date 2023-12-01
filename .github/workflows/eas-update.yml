@@ -32,12 +32,17 @@ jobs:
       - name: Use the value
         id: step_three
         run: |
-          printf '%s\n' "$action_state" # This will output 'yellow'
+          printf '%s\n' "$action_state"
 
       - name: Use the value 2
         id: step_four
         run: |
-          printf '%s\n' "$steps.step_one" # This will output 'step_one'
+          printf '%s\n' "$steps"
+
+      - name: Use the value 2
+        id: step_four_A
+        run: |
+          printf '%s\n' "$steps.step_one"
 
       - name: Set the value 3
         id: step_five
