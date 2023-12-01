@@ -21,9 +21,11 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Update on EAS
-        run: eas update --channel preview --message "teste1" --non-interactive
+        run: 
+          eas update --channel preview --message "teste1" --non-interactive
+          echo "escreva algo e mostre ->" >> $GITHUB_OUTPUT
       - name: Escreva
-        run: echo "escreva algo e mostre -> '${{github}}'"
+        run: echo "escreva algo e mostre -> '${ github.event }'"
   # setFirebase:
   #   name: set firebase
   #   runs-on: ubuntu-latest
