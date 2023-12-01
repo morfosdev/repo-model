@@ -22,8 +22,8 @@ jobs:
         run: yarn
       - name: Update on EAS
         run: |
-          eas update --channel preview --message "teste1" --non-interactive
-          echo "escreva algo e mostre ->" >> $GITHUB_OUTPUT
+          eas update --channel preview --message "teste1" --non-interactive >> $GITHUB_OUTPUT
+          echo "escreva algo e mostre ->"
       - name: Escreva
         run: echo "escreva algo e mostre -> '${ github.event }'"
   # setFirebase:
