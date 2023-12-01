@@ -22,9 +22,14 @@ jobs:
         run: yarn
       - name: Update on EAS
         run: eas update --channel preview --message "teste1" --non-interactive
-      - name: Escreva
-        run:
-          echo $GITHUB_OUTPUT
+      - name: Set the value
+        id: step_one
+        run: |
+          echo "action_state=yellow" >> "$GITHUB_ENV"
+      - name: Use the value
+        id: step_two
+        run: |
+          printf '%s\n' "$action_state" # This will output 'yellow'
   # setFirebase:
   #   name: set firebase
   #   runs-on: ubuntu-latest
