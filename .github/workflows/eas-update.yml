@@ -2,7 +2,7 @@ name: Update expo
 on: [push]
 
 jobs:
-  update:
+  easUpdate:
     name: Update EAS
     runs-on: ubuntu-latest
     if: contains(github.event.head_commit.message, 'github actions - gen update')
@@ -22,4 +22,12 @@ jobs:
         run: yarn
       - name: Update on EAS
         run: eas update --channel preview --message "teste1" --non-interactive
+  # setFirebase:
+  #   name: set firebase
+  #   runs-on: ubuntu-latest
+  #   if: ${{ always() }}
+  #   needs: [easUpdate]
+      # steps:
+      #  - name: Update Firestore
+      #   run: firebase-tools xxx
         
