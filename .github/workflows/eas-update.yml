@@ -47,8 +47,6 @@ jobs:
           doc: qGjG0ZpnktK5sSkxet3n
           value: ${{ env.QR_CODE }}
 
-          # xxx
-
 # - name: 💬 Comment in Slack
 #   uses: slackapi/slack-github-action@v1.17.0
 #   env:
