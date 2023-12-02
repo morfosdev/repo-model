@@ -46,7 +46,8 @@ jobs:
           databaseType: firestore
           path: github
           doc: qGjG0ZpnktK5sSkxet3n
-          value: ${{ secrets.OBJ_FIRE }}
+          # value: ${{ secrets.OBJ_FIRE }}
+          value: ${{ toJSON('"easURL":$env.QRCODE') }}
           
       - name: Show Error1
         run: 
