@@ -38,6 +38,7 @@ jobs:
           QR_CODE: $steps.preview.outputs.qr
 
       - name: Update latest version in realtime database
+        id: firestore
         uses: w9jds/firebase-trigger@master
         with:
           credentials: ${{ secrets.FIREBASE_CREDENTIALS }}
@@ -46,6 +47,18 @@ jobs:
           path: github
           doc: qGjG0ZpnktK5sSkxet3n
           value: ${{ secrets.OBJ_FIRE }}
+          
+      - name: Show Error1
+        run: 
+          echo ${{ steps.firestore.outputs }}
+          
+      - name: Show Error2
+        run: 
+          echo ${{ steps.firestore.outputs.response }}
+          
+      - name: Show Error3
+        run: 
+          echo ${{ steps.firestore.outputs.error }}
 
 # - name: 💬 Comment in Slack
 #   uses: slackapi/slack-github-action@v1.17.0
