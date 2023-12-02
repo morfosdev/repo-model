@@ -34,14 +34,24 @@ jobs:
       - name: Test Qr
         run: |
           echo ${{steps.preview.outputs.qr}}
+        env:
+          QR_CODE: $steps.preview.outputs.qr
 
-      # - name: 💬 Comment in Slack
-      #   uses: slackapi/slack-github-action@v1.17.0
-      #   env:
-      #     SLACK_BOT_TOKEN: xOhedZB0gXh_9ov40Uzt0gd1wOGIwhu6plESS84l
-      #   with:
-      #     channel-id: deployments
-      #     slack-message: 'New deployment is ready!\n- Preview: ${{ steps.preview.outputs.qr }}'
+      - name: Update latest version in realtime database
+        uses: w9jds/firebase-trigger@master
+        with:
+          credentials: ${{ secrets.FIREBASE_CREDENTIALS }}
+          databaseUrl: https://flaxboll.firebaseio.com
+          path: version/lastRelease
+          value: ${{ env.QR_CODE }}
+
+# - name: 💬 Comment in Slack
+#   uses: slackapi/slack-github-action@v1.17.0
+#   env:
+#     SLACK_BOT_TOKEN: xOhedZB0gXh_9ov40Uzt0gd1wOGIwhu6plESS84l
+#   with:
+#     channel-id: deployments
+#     slack-message: 'New deployment is ready!\n- Preview: ${{ steps.preview.outputs.qr }}'
           
 # name: Update expo
 # on: [push]
@@ -99,4 +109,8 @@ jobs:
       #  - name: Update Firestore
       #   run: firebase-tools xxx
       # xx
+
+# DOCS
+# https://github.com/w9jds/firebase-trigger
+# https://github.com/expo/expo-github-action/tree/main/preview#available-variables
         
