@@ -32,7 +32,7 @@ jobs:
         with:
           command: eas update --auto
       - name: Test Qr
-        uses: |
+        run: |
           echo ${{steps.preview.outputs.qr}}
 
 
