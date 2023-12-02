@@ -24,6 +24,7 @@ jobs:
       # - name: Update on EAS
       #   id: step_one
       #   run: eas update --channel preview --message "teste1" --non-interactive
+      # xxx
 
       - name: Set the value
         id: step_two
