@@ -45,6 +45,8 @@ jobs:
           path: version/lastRelease
           value: ${{ env.QR_CODE }}
 
+          # xxx
+
 # - name: 💬 Comment in Slack
 #   uses: slackapi/slack-github-action@v1.17.0
 #   env:
