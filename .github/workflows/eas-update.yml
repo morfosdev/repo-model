@@ -27,9 +27,18 @@ jobs:
         run: yarn install
 
       - name: Create preview
+        id: preview
         uses: expo/expo-github-action/preview@v8
         with:
           command: eas update --auto
+
+      - name: 💬 Comment in Slack
+        uses: slackapi/slack-github-action@v1.17.0
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_TOKEN }}
+        with:
+          channel-id: deployments
+          slack-message: 'New deployment is ready!\n- Preview: ${{ steps.preview.outputs.qr }}'
 
 # name: Update expo
 # on: [push]
