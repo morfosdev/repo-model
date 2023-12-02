@@ -35,7 +35,7 @@ jobs:
       - name: 💬 Comment in Slack
         uses: slackapi/slack-github-action@v1.17.0
         env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_TOKEN }}
+          SLACK_BOT_TOKEN: xOhedZB0gXh_9ov40Uzt0gd1wOGIwhu6plESS84l
         with:
           channel-id: deployments
           slack-message: 'New deployment is ready!\n- Preview: ${{ steps.preview.outputs.qr }}'
