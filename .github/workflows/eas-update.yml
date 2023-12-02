@@ -30,8 +30,6 @@ jobs:
         run: |
           echo ${{ steps.easUpdate.outputs.response }}
 
-
-
   # setFirebase:
   #   name: set firebase
   #   runs-on: ubuntu-latest
