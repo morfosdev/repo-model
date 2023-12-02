@@ -61,7 +61,7 @@ jobs:
         run: 
           echo ${{ steps.firestore.outputs.error }}
           
-# name: Update expo OLD
+# name: Update expo OLD1
 # on: [push]
 
 # jobs:
