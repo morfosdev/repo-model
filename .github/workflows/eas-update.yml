@@ -39,6 +39,7 @@ jobs:
         run: |
           echo ${{ fromJson(steps.easUpdate.outputs.reponse) }}
 
+
   # setFirebase:
   #   name: set firebase
   #   runs-on: ubuntu-latest
