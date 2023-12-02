@@ -47,7 +47,6 @@ jobs:
           doc: qGjG0ZpnktK5sSkxet3n
           value: ${{ secrets.OBJ_FIRE }}
 
-# sss
 # - name: 💬 Comment in Slack
 #   uses: slackapi/slack-github-action@v1.17.0
 #   env:
