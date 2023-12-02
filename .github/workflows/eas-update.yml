@@ -26,9 +26,18 @@ jobs:
       - name: Update on EAS
         id: easUpdate
         run: eas update --channel preview --message "teste1" --non-interactive
-      - name: Show Response
+        
+      - name: Show Response1
         run: |
-          echo ${{ steps.easUpdate.outputs.response }}
+          echo ${{ steps }}
+        
+      - name: Show Response2
+        run: |
+          echo ${{ steps.easUpdate }}
+        
+      - name: Show Response3
+        run: |
+          echo ${{ fromJson(steps.easUpdate.outputs.reponse) }}
 
   # setFirebase:
   #   name: set firebase
