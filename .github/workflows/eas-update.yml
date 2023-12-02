@@ -31,7 +31,6 @@ jobs:
         with:
           command: eas update --auto
 
-
 # name: Update expo
 # on: [push]
 
