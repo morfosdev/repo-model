@@ -42,7 +42,9 @@ jobs:
         with:
           credentials: ${{ secrets.FIREBASE_CREDENTIALS }}
           databaseUrl: https://flaxboll.firebaseio.com
-          path: version/lastRelease
+          databaseType: firestore
+          path: github
+          doc: qGjG0ZpnktK5sSkxet3n
           value: ${{ env.QR_CODE }}
 
           # xxx
