@@ -35,7 +35,6 @@ jobs:
         run: |
           echo ${{steps.preview.outputs.qr}}
 
-
       # - name: 💬 Comment in Slack
       #   uses: slackapi/slack-github-action@v1.17.0
       #   env:
