@@ -46,20 +46,20 @@ jobs:
           databaseType: firestore
           path: github
           doc: qGjG0ZpnktK5sSkxet3n
-          # value: ${{ secrets.OBJ_FIRE }}
-          value: ${{ toJSON('{"name":"jsdaniell", "password":"mypass"}') }}
+          value: ${{ secrets.OBJ_FIRE }}
+          # value: ${{ toJSON('{"name":"jsdaniell", "password":"mypass"}') }}
           
-      - name: Show Error1
-        run: 
-          echo ${{ steps.firestore.outputs }}
-          
-      - name: Show Error2
-        run: 
-          echo ${{ steps.firestore.outputs.response }}
-          
-      - name: Show Error3
-        run: 
-          echo ${{ steps.firestore.outputs.error }}
+# - name: Show Error1
+#   run: 
+#     echo ${{ steps.firestore.outputs }}
+    
+# - name: Show Error2
+#   run: 
+#     echo ${{ steps.firestore.outputs.response }}
+    
+# - name: Show Error3
+#   run: 
+#     echo ${{ steps.firestore.outputs.error }}
           
 # name: Update expo OLDxx
 # on: [push]
