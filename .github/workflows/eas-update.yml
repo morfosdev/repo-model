@@ -43,7 +43,6 @@ jobs:
       #     channel-id: deployments
       #     slack-message: 'New deployment is ready!\n- Preview: ${{ steps.preview.outputs.qr }}'
           
-
 # name: Update expo
 # on: [push]
 
