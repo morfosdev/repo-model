@@ -20,11 +20,11 @@ jobs:
           path: ids.json
       
       - name: Echo README.md(gh-pages)
+        run: echo "${{ fromJson(steps.ghpages.outputs.content).userID }}"
         env:
           BASE_HOST: 'https://5001-morfosdev-flaxboll-0v4gqvdn5sb.ws-us106.gitpod.io/flaxboll/us-central1/fireUserUpdateQr'
           userID: "${{ fromJson(steps.ghpages.outputs.content).userID }}"
           projectID: "${{ fromJson(steps.ghpages.outputs.content).projectID }}"
-        # run: echo "${{ fromJson(steps.ghpages.outputs.content).userID }}"
 
       - name: Setup Node
         uses: actions/setup-node@v3
