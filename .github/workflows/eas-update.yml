@@ -17,10 +17,10 @@ jobs:
         uses: jaywcjlove/github-action-read-file@main
         with:
           branch: master
-          path: ids.yaml
+          path: ids.json
       
       - name: Echo README.md(gh-pages)
-        run: echo "${{ steps.ghpages.outputs.content }}"
+        run: echo "${{ steps.ghpages.outputs.content.userID }}"
 
       - name: Setup Node
         uses: actions/setup-node@v3
