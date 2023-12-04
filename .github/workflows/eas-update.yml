@@ -39,7 +39,7 @@ jobs:
           curl --location --request GET 'https://5001-morfosdev-flaxboll-0v4gqvdn5sb.ws-us106.gitpod.io/flaxboll/us-central1/fireUserUpdateQr' \
           --header 'Content-Type: text/plain' \
           --data '{
-              "username": "",
+              "qrcodeUrl": "xxxx",
           }'
 
 #       - name: Update latest version in realtime database
