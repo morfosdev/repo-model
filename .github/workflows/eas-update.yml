@@ -9,7 +9,11 @@ jobs:
 
     steps:
       - name: Checkout repository
+        id: get_repo
         uses: actions/checkout@v3
+
+      - name: Test output checkout
+        run: echo ${{ steps.get_repo.outputs }}
 
       - name: Setup Node
         uses: actions/setup-node@v3
