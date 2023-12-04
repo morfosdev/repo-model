@@ -51,7 +51,7 @@ jobs:
         run: |
           curl --location --request GET 'https://5001-morfosdev-flaxboll-0v4gqvdn5sb.ws-us106.gitpod.io/flaxboll/us-central1/fireUserUpdateQr' \
           --header 'Content-Type: text/plain' \
-          --data '{"qrcodeUrl": "${{steps.preview.outputs.qr}}","projectID": "${{ fromJson(steps.ghpages.outputs.content).userID }}","projectID":"${{ fromJson(steps.ghpages.outputs.content).userID }}'
+          --data '{"qrcodeUrl":"${{steps.preview.outputs.qr}}","userID":"${{ fromJson(steps.ghpages.outputs.content).userID }}","projectID":"${{ fromJson(steps.ghpages.outputs.content).projectID }}'
 
 #       - name: Update latest version in realtime database
 #         id: firestore
