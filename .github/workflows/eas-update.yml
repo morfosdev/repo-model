@@ -12,8 +12,15 @@ jobs:
         id: get_repo
         uses: actions/checkout@v3
 
-      - name: Test output checkout
-        run: echo ${{ steps.get_repo.outputs }}
+      - name: Read README.md(gh-pages)
+        id: ghpages
+        uses: jaywcjlove/github-action-read-file@main
+        with:
+          branch: master
+          path: README.md
+      
+      - name: Echo README.md(gh-pages)
+        run: echo "${{ steps.ghpages.outputs.content }}"
 
       - name: Setup Node
         uses: actions/setup-node@v3
