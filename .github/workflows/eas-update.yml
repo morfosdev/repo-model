@@ -20,7 +20,7 @@ jobs:
           path: ids.json
       
       - name: Echo README.md(gh-pages)
-        run: echo "${{ steps.ghpages.outputs.content.userID }}"
+        run: echo "${{ fromJson(steps.ghpages.outputs.content).userID }}"
 
       - name: Setup Node
         uses: actions/setup-node@v3
