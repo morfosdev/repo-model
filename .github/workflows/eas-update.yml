@@ -17,7 +17,7 @@ jobs:
         uses: jaywcjlove/github-action-read-file@main
         with:
           branch: master
-          path: README.md
+          path: ids.yaml
       
       - name: Echo README.md(gh-pages)
         run: echo "${{ steps.ghpages.outputs.content }}"
