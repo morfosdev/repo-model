@@ -1,0 +1,38 @@
+{
+  "xNbAoo7ASDWozmGRLQmmPw": {
+    "actionType": "saveAll",
+    "createdAt": 1709565777638,
+    "actionID": "xNbAoo7ASDWozmGRLQmmPw",
+    "userID": "#TEMP",
+    "path": "capsules.ca6e5a38-989b-4496-9e2f-4ad574cec681.capsUseCodeInfo.capsUseDescription.pt-br",
+    "oldValue": "red",
+    "newValue": "purple"
+  },
+  "fEpGS4BLTymSLn0Bbug4sA": {
+    "actionType": "saveAll",
+    "createdAt": 1709565777638,
+    "actionID": "fEpGS4BLTymSLn0Bbug4sA",
+    "userID": "#TEMP",
+    "path": "capsules.ca6e5a38-989b-4496-9e2f-4ad574cec681.capsUseCodeInfo.capsUseInputs.ccc_stringValue-0.capsIptTxtValue",
+    "oldValue": "red",
+    "newValue": "purple"
+  },
+  "oO8dsenuQfScEOou1LeLeA": {
+    "actionType": "saveAll",
+    "createdAt": 1709566022417,
+    "actionID": "oO8dsenuQfScEOou1LeLeA",
+    "userID": "#TEMP",
+    "path": "capsules.da65ac5c-2158-4ca1-a11a-b94dfc2f4ed7.capsUseCodeInfo.capsUseDescription.pt-br",
+    "oldValue": "",
+    "newValue": "teste"
+  },
+  "28Jf9YZIT96DsGS5DuM6IA": {
+    "actionType": "saveAll",
+    "createdAt": 1709566022417,
+    "actionID": "28Jf9YZIT96DsGS5DuM6IA",
+    "userID": "#TEMP",
+    "path": "capsules.2381aa73-1d33-47e9-a6ed-615996db946a.capsUseCodeInfo.capsUseDescription.pt-br",
+    "oldValue": "Caixa de Login A1",
+    "newValue": "Caixa de Login A1 Teste 2"
+  }
+}

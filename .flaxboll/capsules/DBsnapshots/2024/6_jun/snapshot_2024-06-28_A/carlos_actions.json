@@ -1,0 +1,645 @@
+{
+  "uvuh8kGNT8OU5jF4ynAWHA": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "uvuh8kGNT8OU5jF4ynAWHA",
+    "userID": "#TEMP",
+    "path": "capsules.737e21c0-e15f-4e73-8b57-926144210f3f",
+    "newValue": {
+      "capsType": "useCode",
+      "capsDB": {
+        "capsID": "737e21c0-e15f-4e73-8b57-926144210f3f",
+        "capsPrjID": "ppp_01",
+        "capsUserID": "uuu_01",
+        "capsCreatedAt": 1718396265586
+      },
+      "capsUseCodeInfo": {
+        "capsUseFSPath": "src/index.tsx",
+        "capsCodeID": "ccc_propObj",
+        "capsCodeVersionID": "1",
+        "capsUpdatedAt": [1718396265586],
+        "capsUseLabel": { "pt-br": "prop obj" },
+        "capsUseDescription": { "pt-br": "xxx" },
+        "capsUseInputs": {
+          "ccc_propObj-0": {
+            "capsIptCodeID": "ccc_propObj-0",
+            "capsIptTxtValue": "no name"
+          },
+          "ccc_propObj-1": {
+            "capsIptCodeID": "ccc_propObj-1",
+            "capsIptCapsValue": []
+          }
+        },
+        "capsUseConections": "1"
+      }
+    }
+  },
+  "Z069Eo22ROmTeuv8uH7_9A": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "Z069Eo22ROmTeuv8uH7_9A",
+    "userID": "#TEMP",
+    "path": "capsules.dca3179c-c89f-4461-9088-53fad4a75d2d.capsUseCodeInfo.capsUseInputs.ccc_propObj-1.capsIptCapsValue",
+    "oldValue": ["e2ec4d41-db03-4afd-8eeb-3909a578c1c6"],
+    "newValue": [
+      "e2ec4d41-db03-4afd-8eeb-3909a578c1c6",
+      "737e21c0-e15f-4e73-8b57-926144210f3f"
+    ]
+  },
+  "QkAee5AUSDSoazC05izjEg": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "QkAee5AUSDSoazC05izjEg",
+    "userID": "#TEMP",
+    "path": "capsules.737e21c0-e15f-4e73-8b57-926144210f3f.capsUseCodeInfo.capsUseDescription.pt-br",
+    "oldValue": "xxx",
+    "newValue": "picker1"
+  },
+  "CXpGuQlTRgO9jUl66cW5LQ": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "CXpGuQlTRgO9jUl66cW5LQ",
+    "userID": "#TEMP",
+    "path": "capsules.737e21c0-e15f-4e73-8b57-926144210f3f.capsUseCodeInfo.capsUseLabel.pt-br",
+    "oldValue": "prop obj",
+    "newValue": ""
+  },
+  "khzUxLWcSSa0bnYqHBl_-A": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "khzUxLWcSSa0bnYqHBl_-A",
+    "userID": "#TEMP",
+    "path": "capsules.737e21c0-e15f-4e73-8b57-926144210f3f.capsUseCodeInfo.capsUseLabel.pt-br",
+    "oldValue": "",
+    "newValue": "picker1"
+  },
+  "e4cpxIWDS322QVsC7jDThA": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "e4cpxIWDS322QVsC7jDThA",
+    "userID": "#TEMP",
+    "path": "capsules.737e21c0-e15f-4e73-8b57-926144210f3f.capsUseCodeInfo.capsUseDescription.pt-br",
+    "oldValue": "picker1",
+    "newValue": "prop obj"
+  },
+  "5igshVx5S8GOKo6kJXrUyA": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "5igshVx5S8GOKo6kJXrUyA",
+    "userID": "#TEMP",
+    "path": "capsules.737e21c0-e15f-4e73-8b57-926144210f3f.capsUseCodeInfo.capsUseInputs.ccc_propObj-0.capsIptTxtValue",
+    "oldValue": "no name",
+    "newValue": "picker1"
+  },
+  "XtKV_PJEQPWaJKD6zujWwg": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "XtKV_PJEQPWaJKD6zujWwg",
+    "userID": "#TEMP",
+    "path": "capsules.737e21c0-e15f-4e73-8b57-926144210f3f.capsUseCodeInfo.capsUseLabel.pt-br",
+    "oldValue": "picker1",
+    "newValue": "for"
+  },
+  "iIaKAdirSWKNjpfWJ8mDtA": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "iIaKAdirSWKNjpfWJ8mDtA",
+    "userID": "#TEMP",
+    "path": "capsules.737e21c0-e15f-4e73-8b57-926144210f3f.capsUseCodeInfo.capsUseLabel.pt-br",
+    "oldValue": "for",
+    "newValue": "forms"
+  },
+  "mY33qs9fRP6rAk0wu6xrhA": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "mY33qs9fRP6rAk0wu6xrhA",
+    "userID": "#TEMP",
+    "path": "capsules.737e21c0-e15f-4e73-8b57-926144210f3f.capsUseCodeInfo.capsUseInputs.ccc_propObj-0.capsIptTxtValue",
+    "oldValue": "picker1",
+    "newValue": "forms"
+  },
+  "1K1PXsx5TCaFc-FA6xfbcw": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "1K1PXsx5TCaFc-FA6xfbcw",
+    "userID": "#TEMP",
+    "path": "capsules.880ae002-4db2-43bc-86ce-52c09e4ecdc5",
+    "newValue": {
+      "capsType": "useCode",
+      "capsDB": {
+        "capsID": "880ae002-4db2-43bc-86ce-52c09e4ecdc5",
+        "capsPrjID": "ppp_01",
+        "capsUserID": "uuu_01",
+        "capsCreatedAt": 1718396332169
+      },
+      "capsUseCodeInfo": {
+        "capsUseFSPath": "src/index.tsx",
+        "capsCodeID": "ccc_propObj",
+        "capsCodeVersionID": "1",
+        "capsUpdatedAt": [1718396332169],
+        "capsUseLabel": { "pt-br": "prop obj" },
+        "capsUseDescription": { "pt-br": "xxx" },
+        "capsUseInputs": {
+          "ccc_propObj-0": {
+            "capsIptCodeID": "ccc_propObj-0",
+            "capsIptTxtValue": "no name"
+          },
+          "ccc_propObj-1": {
+            "capsIptCodeID": "ccc_propObj-1",
+            "capsIptCapsValue": []
+          }
+        },
+        "capsUseConections": "1"
+      }
+    }
+  },
+  "nUsu1EiQToGkf0CGHj2Kfg": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "nUsu1EiQToGkf0CGHj2Kfg",
+    "userID": "#TEMP",
+    "path": "capsules.737e21c0-e15f-4e73-8b57-926144210f3f.capsUseCodeInfo.capsUseInputs.ccc_propObj-1.capsIptCapsValue",
+    "oldValue": [],
+    "newValue": ["880ae002-4db2-43bc-86ce-52c09e4ecdc5"]
+  },
+  "RFzx07PbRJWCQJfhGQKaEw": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "RFzx07PbRJWCQJfhGQKaEw",
+    "userID": "#TEMP",
+    "path": "capsules.880ae002-4db2-43bc-86ce-52c09e4ecdc5.capsUseCodeInfo.capsUseLabel.pt-br",
+    "oldValue": "prop obj",
+    "newValue": "pickers"
+  },
+  "reODlhmLRlOYH53HiJtRwA": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "reODlhmLRlOYH53HiJtRwA",
+    "userID": "#TEMP",
+    "path": "capsules.880ae002-4db2-43bc-86ce-52c09e4ecdc5.capsUseCodeInfo.capsUseDescription.pt-br",
+    "oldValue": "xxx",
+    "newValue": "prop obj"
+  },
+  "jkkm503_SCWM_i4HAImL-w": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "jkkm503_SCWM_i4HAImL-w",
+    "userID": "#TEMP",
+    "path": "capsules.880ae002-4db2-43bc-86ce-52c09e4ecdc5.capsUseCodeInfo.capsUseInputs.ccc_propObj-0.capsIptTxtValue",
+    "oldValue": "no name",
+    "newValue": "pickers"
+  },
+  "OY88jG-KRMCyiqFDs3TyUg": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "OY88jG-KRMCyiqFDs3TyUg",
+    "userID": "#TEMP",
+    "path": "capsules.38b3b65d-5c9e-4225-87de-cd5fc5e5f5f1",
+    "newValue": {
+      "capsType": "useCode",
+      "capsDB": {
+        "capsID": "38b3b65d-5c9e-4225-87de-cd5fc5e5f5f1",
+        "capsPrjID": "ppp_01",
+        "capsUserID": "uuu_01",
+        "capsCreatedAt": 1718396351164
+      },
+      "capsUseCodeInfo": {
+        "capsUseFSPath": "src/index.tsx",
+        "capsCodeID": "ccc_propArray",
+        "capsCodeVersionID": "1",
+        "capsUpdatedAt": [1718396351164],
+        "capsUseLabel": { "pt-br": "prop array" },
+        "capsUseDescription": { "pt-br": "xxx" },
+        "capsUseInputs": {
+          "ccc_propArray-0": {
+            "capsIptCodeID": "ccc_propArray-0",
+            "capsIptTxtValue": "no name"
+          },
+          "ccc_propArray-1": {
+            "capsIptCodeID": "ccc_propArray-1",
+            "capsIptCapsValue": []
+          }
+        },
+        "capsUseConections": "1"
+      }
+    }
+  },
+  "aolXDAPLS4Kbf8iOlVwK1Q": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "aolXDAPLS4Kbf8iOlVwK1Q",
+    "userID": "#TEMP",
+    "path": "capsules.880ae002-4db2-43bc-86ce-52c09e4ecdc5.capsUseCodeInfo.capsUseInputs.ccc_propObj-1.capsIptCapsValue",
+    "oldValue": [],
+    "newValue": ["38b3b65d-5c9e-4225-87de-cd5fc5e5f5f1"]
+  },
+  "c2BP75T2SVu0neRbT1K-tw": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "c2BP75T2SVu0neRbT1K-tw",
+    "userID": "#TEMP",
+    "path": "capsules.38b3b65d-5c9e-4225-87de-cd5fc5e5f5f1.capsUseCodeInfo.capsUseLabel.pt-br",
+    "oldValue": "prop array",
+    "newValue": "pick1"
+  },
+  "7u8FVJm7R06t8nI0NScRpA": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "7u8FVJm7R06t8nI0NScRpA",
+    "userID": "#TEMP",
+    "path": "capsules.38b3b65d-5c9e-4225-87de-cd5fc5e5f5f1.capsUseCodeInfo.capsUseLabel.pt-br",
+    "oldValue": "pick1",
+    "newValue": "pickr1"
+  },
+  "sPXcsJR7Tg6181DBJ_Ldhw": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "sPXcsJR7Tg6181DBJ_Ldhw",
+    "userID": "#TEMP",
+    "path": "capsules.38b3b65d-5c9e-4225-87de-cd5fc5e5f5f1.capsUseCodeInfo.capsUseDescription.pt-br",
+    "oldValue": "xxx",
+    "newValue": "prop array"
+  },
+  "_hParnI0T6WMO29-4yGKvw": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "_hParnI0T6WMO29-4yGKvw",
+    "userID": "#TEMP",
+    "path": "capsules.38b3b65d-5c9e-4225-87de-cd5fc5e5f5f1.capsUseCodeInfo.capsUseInputs.ccc_propArray-0.capsIptTxtValue",
+    "oldValue": "no name",
+    "newValue": "pickr1"
+  },
+  "sYHkB99oQKCd0FOuecd5_g": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "sYHkB99oQKCd0FOuecd5_g",
+    "userID": "#TEMP",
+    "path": "capsules.517c0f7b-03c5-4334-8944-4e179d851575",
+    "newValue": {
+      "capsType": "useCode",
+      "capsDB": {
+        "capsID": "517c0f7b-03c5-4334-8944-4e179d851575",
+        "capsPrjID": "ppp_01",
+        "capsUserID": "uuu_01",
+        "capsCreatedAt": 1718396375313
+      },
+      "capsUseCodeInfo": {
+        "capsUseFSPath": "src/index.tsx",
+        "capsCodeID": "ccc_objectValue",
+        "capsCodeVersionID": "1",
+        "capsUpdatedAt": [1718396375313],
+        "capsUseLabel": { "pt-br": "valor objeto" },
+        "capsUseDescription": { "pt-br": "xxx" },
+        "capsUseInputs": {
+          "ccc_objectValue-0": {
+            "capsIptCodeID": "ccc_objectValue-0",
+            "capsIptCapsValue": []
+          }
+        },
+        "capsUseConections": "1"
+      }
+    }
+  },
+  "NfuhLGyPSJC3mD4EHXnHhw": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541095,
+    "actionID": "NfuhLGyPSJC3mD4EHXnHhw",
+    "userID": "#TEMP",
+    "path": "capsules.38b3b65d-5c9e-4225-87de-cd5fc5e5f5f1.capsUseCodeInfo.capsUseInputs.ccc_propArray-1.capsIptCapsValue",
+    "oldValue": [],
+    "newValue": ["517c0f7b-03c5-4334-8944-4e179d851575"]
+  },
+  "Uk_z3SGiTLK6-VNOIC79eA": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541096,
+    "actionID": "Uk_z3SGiTLK6-VNOIC79eA",
+    "userID": "#TEMP",
+    "path": "capsules.517c0f7b-03c5-4334-8944-4e179d851575.capsUseCodeInfo.capsUseDescription.pt-br",
+    "oldValue": "xxx",
+    "newValue": "{ }"
+  },
+  "KF7VcazNRqqYH6FCQIueBg": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541096,
+    "actionID": "KF7VcazNRqqYH6FCQIueBg",
+    "userID": "#TEMP",
+    "path": "capsules.9a9d7c2e-9389-4081-973e-21d51432d14b",
+    "newValue": {
+      "capsType": "useCode",
+      "capsDB": {
+        "capsID": "9a9d7c2e-9389-4081-973e-21d51432d14b",
+        "capsPrjID": "ppp_01",
+        "capsUserID": "uuu_01",
+        "capsCreatedAt": 1718396387723
+      },
+      "capsUseCodeInfo": {
+        "capsUseFSPath": "src/index.tsx",
+        "capsCodeID": "ccc_propString_B",
+        "capsCodeVersionID": "1",
+        "capsUpdatedAt": [1718396387723],
+        "capsUseLabel": { "pt-br": "prop string" },
+        "capsUseDescription": { "pt-br": "xxx" },
+        "capsUseInputs": {
+          "ccc_propString_B-0": {
+            "capsIptCodeID": "ccc_propString_B-0",
+            "capsIptTxtValue": "no name"
+          },
+          "ccc_propString_B-1": {
+            "capsIptCodeID": "ccc_propString_B-1",
+            "capsIptTxtValue": "no value"
+          }
+        },
+        "capsUseConections": "1"
+      }
+    }
+  },
+  "B0WaiH3ESG2Ps6Zj4z-Asw": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541096,
+    "actionID": "B0WaiH3ESG2Ps6Zj4z-Asw",
+    "userID": "#TEMP",
+    "path": "capsules.517c0f7b-03c5-4334-8944-4e179d851575.capsUseCodeInfo.capsUseInputs.ccc_objectValue-0.capsIptCapsValue",
+    "oldValue": [],
+    "newValue": ["9a9d7c2e-9389-4081-973e-21d51432d14b"]
+  },
+  "9MhkBaR_Sj-bFWJES3UWtg": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541096,
+    "actionID": "9MhkBaR_Sj-bFWJES3UWtg",
+    "userID": "#TEMP",
+    "path": "capsules.9a9d7c2e-9389-4081-973e-21d51432d14b.capsUseCodeInfo.capsUseLabel.pt-br",
+    "oldValue": "prop string",
+    "newValue": "label"
+  },
+  "Y3wdFkGjQh6TWCXBh4prGQ": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541096,
+    "actionID": "Y3wdFkGjQh6TWCXBh4prGQ",
+    "userID": "#TEMP",
+    "path": "capsules.9a9d7c2e-9389-4081-973e-21d51432d14b.capsUseCodeInfo.capsUseDescription.pt-br",
+    "oldValue": "xxx",
+    "newValue": "prop string"
+  },
+  "-6_MH37pTEOvCdZ8CKBNeA": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541096,
+    "actionID": "-6_MH37pTEOvCdZ8CKBNeA",
+    "userID": "#TEMP",
+    "path": "capsules.9a9d7c2e-9389-4081-973e-21d51432d14b.capsUseCodeInfo.capsUseInputs.ccc_propString_B-0.capsIptTxtValue",
+    "oldValue": "no name",
+    "newValue": "label"
+  },
+  "sSwtuunnTNqiRu6VHzPXwA": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541096,
+    "actionID": "sSwtuunnTNqiRu6VHzPXwA",
+    "userID": "#TEMP",
+    "path": "capsules.9a9d7c2e-9389-4081-973e-21d51432d14b.capsUseCodeInfo.capsUseInputs.ccc_propString_B-1.capsIptTxtValue",
+    "oldValue": "no value",
+    "newValue": "Elefante"
+  },
+  "gzWum7njT7mMedJCiWajXQ": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541096,
+    "actionID": "gzWum7njT7mMedJCiWajXQ",
+    "userID": "#TEMP",
+    "path": "capsules.517c0f7b-03c5-4334-8944-4e179d851575.capsUseCodeInfo.capsUseDescription.pt-br",
+    "oldValue": "{ }",
+    "newValue": "{ label: }"
+  },
+  "eafyIAtaR9uJ1YlXZRz0ig": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541096,
+    "actionID": "eafyIAtaR9uJ1YlXZRz0ig",
+    "userID": "#TEMP",
+    "path": "capsules.517c0f7b-03c5-4334-8944-4e179d851575.capsUseCodeInfo.capsUseDescription.pt-br",
+    "oldValue": "{ label: }",
+    "newValue": "{ label: Elefante }"
+  },
+  "sTZrXi9WTFK2W6RQjTcrBw": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541096,
+    "actionID": "sTZrXi9WTFK2W6RQjTcrBw",
+    "userID": "#TEMP",
+    "path": "capsules.3defe91d-e03c-47ff-9e97-8acda3f2c404",
+    "newValue": {
+      "capsDB": {
+        "capsCreatedAt": 1718396464114,
+        "capsID": "3defe91d-e03c-47ff-9e97-8acda3f2c404",
+        "capsPrjID": "ppp_01",
+        "capsUserID": "uuu_01"
+      },
+      "capsType": "useCode",
+      "capsUseCodeInfo": {
+        "capsUseFSPath": "src/index.tsx",
+        "capsCodeID": "ccc_propString_B",
+        "capsCodeVersionID": "1",
+        "capsUpdatedAt": [1718396464114],
+        "capsUseLabel": { "pt-br": "label" },
+        "capsUseDescription": { "pt-br": "prop string" },
+        "capsUseInputs": {
+          "ccc_propString_B-0": {
+            "capsIptCodeID": "ccc_propString_B-0",
+            "capsIptTxtValue": "label"
+          },
+          "ccc_propString_B-1": {
+            "capsIptCodeID": "ccc_propString_B-1",
+            "capsIptTxtValue": "Elefante"
+          }
+        },
+        "capsUseConections": "1"
+      }
+    }
+  },
+  "vykhQmJgSx-VOYwmHUqQEA": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541096,
+    "actionID": "vykhQmJgSx-VOYwmHUqQEA",
+    "userID": "#TEMP",
+    "path": "capsules.4fa01f42-05e4-45ae-ae50-a22cde2b1b38",
+    "newValue": {
+      "capsDB": {
+        "capsCreatedAt": 1718396464114,
+        "capsID": "4fa01f42-05e4-45ae-ae50-a22cde2b1b38",
+        "capsPrjID": "ppp_01",
+        "capsUserID": "uuu_01"
+      },
+      "capsType": "useCode",
+      "capsUseCodeInfo": {
+        "capsUseFSPath": "src/index.tsx",
+        "capsCodeID": "ccc_objectValue",
+        "capsCodeVersionID": "1",
+        "capsUpdatedAt": [1718396464114],
+        "capsUseLabel": { "pt-br": "valor objeto - Cópia" },
+        "capsUseDescription": { "pt-br": "{ label: Elefante }" },
+        "capsUseInputs": {
+          "ccc_objectValue-0": {
+            "capsIptCodeID": "ccc_objectValue-0",
+            "capsIptCapsValue": ["3defe91d-e03c-47ff-9e97-8acda3f2c404"]
+          }
+        },
+        "capsUseConections": "1"
+      }
+    }
+  },
+  "ZddbxY00Ru2p7Braqyi8gA": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541096,
+    "actionID": "ZddbxY00Ru2p7Braqyi8gA",
+    "userID": "#TEMP",
+    "path": "capsules.38b3b65d-5c9e-4225-87de-cd5fc5e5f5f1.capsUseCodeInfo.capsUseInputs.ccc_propArray-1.capsIptCapsValue",
+    "oldValue": ["517c0f7b-03c5-4334-8944-4e179d851575"],
+    "newValue": [
+      "517c0f7b-03c5-4334-8944-4e179d851575",
+      "4fa01f42-05e4-45ae-ae50-a22cde2b1b38"
+    ]
+  },
+  "onNz6oHNRaew0WLDFSHbVg": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541096,
+    "actionID": "onNz6oHNRaew0WLDFSHbVg",
+    "userID": "#TEMP",
+    "path": "capsules.4fa01f42-05e4-45ae-ae50-a22cde2b1b38.capsUseCodeInfo.capsUseLabel.pt-br",
+    "oldValue": "valor objeto - Cópia",
+    "newValue": "valor objeto"
+  },
+  "Z7lvj3AHRrGETj0N1PWUcg": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541096,
+    "actionID": "Z7lvj3AHRrGETj0N1PWUcg",
+    "userID": "#TEMP",
+    "path": "capsules.4fa01f42-05e4-45ae-ae50-a22cde2b1b38.capsUseCodeInfo.capsUseDescription.pt-br",
+    "oldValue": "{ label: Elefante }",
+    "newValue": "{ label: Macaco }"
+  },
+  "l68iWu4iQo-GWtOnj3tkUw": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541096,
+    "actionID": "l68iWu4iQo-GWtOnj3tkUw",
+    "userID": "#TEMP",
+    "path": "capsules.3defe91d-e03c-47ff-9e97-8acda3f2c404.capsUseCodeInfo.capsUseInputs.ccc_propString_B-1.capsIptTxtValue",
+    "oldValue": "Elefante",
+    "newValue": "Macaco"
+  },
+  "b30V5pmkQgqrt0o7xfzfEw": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541096,
+    "actionID": "b30V5pmkQgqrt0o7xfzfEw",
+    "userID": "#TEMP",
+    "path": "capsules.dd0dd96b-54e4-48a4-aff8-145dad693cd5",
+    "newValue": {
+      "capsType": "useCode",
+      "capsDB": {
+        "capsID": "dd0dd96b-54e4-48a4-aff8-145dad693cd5",
+        "capsPrjID": "ppp_01",
+        "capsUserID": "uuu_01",
+        "capsCreatedAt": 1718396518542
+      },
+      "capsUseCodeInfo": {
+        "capsUseFSPath": "src/index.tsx",
+        "capsCodeID": "ccc_iptPicker",
+        "capsCodeVersionID": "1",
+        "capsUpdatedAt": [1718396518542],
+        "capsUseLabel": { "pt-br": "IptPicker (custom)" },
+        "capsUseDescription": { "pt-br": "xxx" },
+        "capsUseInputs": {
+          "ccc_iptPicker-0": {
+            "capsIptCodeID": "ccc_iptPicker-0",
+            "capsIptCapsValue": []
+          },
+          "ccc_iptPicker-1": {
+            "capsIptCodeID": "ccc_iptPicker-1",
+            "capsIptCapsValue": []
+          },
+          "ccc_iptPicker-2": {
+            "capsIptCodeID": "ccc_iptPicker-2",
+            "capsIptCapsValue": []
+          },
+          "ccc_iptPicker-3": {
+            "capsIptCodeID": "ccc_iptPicker-3",
+            "capsIptCapsValue": []
+          }
+        },
+        "capsUseConections": "1"
+      }
+    }
+  },
+  "j1IFxDp3THaFMvLXOLHxkQ": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541096,
+    "actionID": "j1IFxDp3THaFMvLXOLHxkQ",
+    "userID": "#TEMP",
+    "path": "capsules.258f8aa5-9772-4d77-8b01-2ab438848813.capsUseCodeInfo.capsUseInputs.ccc_dynView-4.capsIptCapsValue",
+    "oldValue": [
+      "490fe642-613c-45f1-a824-3f689fa0df59",
+      "e11dd1a5-77d9-4509-839b-e560ee6fed12",
+      "b2cd9f76-d1cf-43aa-a6e9-e5baa7715cc8",
+      "d4ce5f04-f176-4349-866d-585a59c64073"
+    ],
+    "newValue": [
+      "490fe642-613c-45f1-a824-3f689fa0df59",
+      "e11dd1a5-77d9-4509-839b-e560ee6fed12",
+      "b2cd9f76-d1cf-43aa-a6e9-e5baa7715cc8",
+      "d4ce5f04-f176-4349-866d-585a59c64073",
+      "dd0dd96b-54e4-48a4-aff8-145dad693cd5"
+    ]
+  },
+  "h_rXYaHoSeSasSbcjdB_Yw": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541096,
+    "actionID": "h_rXYaHoSeSasSbcjdB_Yw",
+    "userID": "#TEMP",
+    "path": "capsules.c3828044-3f76-43e3-bd23-944c575b32d2",
+    "newValue": {
+      "capsType": "useCode",
+      "capsDB": {
+        "capsID": "c3828044-3f76-43e3-bd23-944c575b32d2",
+        "capsPrjID": "ppp_01",
+        "capsUserID": "uuu_01",
+        "capsCreatedAt": 1718396523650
+      },
+      "capsUseCodeInfo": {
+        "capsUseFSPath": "src/index.tsx",
+        "capsCodeID": "ccc_stringValue",
+        "capsCodeVersionID": "1",
+        "capsUpdatedAt": [1718396523650],
+        "capsUseLabel": { "pt-br": "valor string" },
+        "capsUseDescription": { "pt-br": "xxx" },
+        "capsUseInputs": {
+          "ccc_stringValue-0": {
+            "capsIptCodeID": "ccc_stringValue-0",
+            "capsIptTxtValue": ""
+          }
+        },
+        "capsUseConections": "1"
+      }
+    }
+  },
+  "BRY0-dF4QRWcTz5KOPeCjA": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541096,
+    "actionID": "BRY0-dF4QRWcTz5KOPeCjA",
+    "userID": "#TEMP",
+    "path": "capsules.dd0dd96b-54e4-48a4-aff8-145dad693cd5.capsUseCodeInfo.capsUseInputs.ccc_iptPicker-0.capsIptCapsValue",
+    "oldValue": [],
+    "newValue": ["c3828044-3f76-43e3-bd23-944c575b32d2"]
+  },
+  "KLfSpXNiRVuYZRkhUNAbcw": {
+    "actionType": "saveAll",
+    "createdAt": 1718396541096,
+    "actionID": "KLfSpXNiRVuYZRkhUNAbcw",
+    "userID": "#TEMP",
+    "path": "capsules.c3828044-3f76-43e3-bd23-944c575b32d2.capsUseCodeInfo.capsUseInputs.ccc_stringValue-0.capsIptTxtValue",
+    "oldValue": "",
+    "newValue": "sc.ds.forms.pickers.pickr1"
+  },
+  "W8CwJ3ITQ764gS5FKsaH3Q": {
+    "actionType": "saveAll",
+    "createdAt": 1718396628650,
+    "actionID": "W8CwJ3ITQ764gS5FKsaH3Q",
+    "userID": "#TEMP",
+    "path": "capsules.c3828044-3f76-43e3-bd23-944c575b32d2.capsUseCodeInfo.capsUseDescription.pt-br",
+    "oldValue": "xxx",
+    "newValue": "sc.ds.forms.pickers.pickr1"
+  }
+}
