@@ -6,7 +6,7 @@
         "capsDescription": { "pt-br": "", "en": "" },
         "capsCodeTypes": ["flaxSystem", "dirSeed"],
 
-        "capsCodeText": "", // "!#!name!#!", [!#!files!#!]
+        "capsCodeText": "",
 
         "capsCodeInputs": {
           "ccc_dirSeed-0": {
@@ -67,7 +67,7 @@
         "capsDescription": { "pt-br": "", "en": "" },
         "capsCodeTypes": ["flaxSystem", "fileSeed"],
 
-        "capsCodeText": "!#!code!#!", // file: !#!name!#!
+        "capsCodeText": "!#!code!#!",
 
         "capsCodeInputs": {
           "ccc_fileSeed-0": {
@@ -93,7 +93,7 @@
               "capsIptCapsLabel": { "pt-br": "code text", "en": "code text" },
               "capsIptCapsDescription": { "pt-br": "", "en": "" },
 
-              "capsIptCapsDfCode": "", // no code to inject,
+              "capsIptCapsDfCode": "",
               "capsIptCapsTypesToAdd": ["string process", "project"]
             }
           }
@@ -135,7 +135,6 @@
         "capsCodeTypes": ["project"],
 
         "capsCodeText": "\n// ---------- import React Packs\nimport React from 'react';\nimport * as RN from 'react-native';\n\n// ---------- import Variables Pack\nimport { create } from 'zustand';\n\n// ---------- import Local Tools\nimport {mapElements} from './tools/base/project/mapElements';\nimport * as functions from './tools/base/functions';\nimport * as Elements from './tools/base/Elements';\nimport { Project } from './tools/base/project/';\nimport * as jsvals from './tools/base/jsvals';\nimport { props } from './tools/base/props';\nimport * as customs from './tools/customs';\nimport * as stls from './tools/base/stls';\nimport { tools } from './tools';\n\n// ---------- set Caps Inputs\nconst currRoute = '!#!initial screen!#!'\n\nlet args = [];\n\nconst screens = [\n  !#!Lista de Telas!#!\n]\n\nconst initCt = () => ({\n  !#!Lista de Variáveis!#!\n});\nconst initObj = initCt();\n// console.log(initObj);\n\nconst arrInitFuncs = [\n  !#!Start Functions!#!\n];\n\nexport const useRoutes = create(() => ({ currRoute }));\n\n// ---------- set Main Component\nexport default function Router() {\n\n  return (\n    <Project\n      configData={{\n        screens,\n        initCt,\n        arrInitFuncs,\n      }}\n    />\n  );\n};\n\nRN.AppRegistry.registerComponent(\"Router\", () => Router);\n\nRN.AppRegistry.runApplication(\"Router\", {\nrootTag: document.getElementById(\"root\"),\n});\n",
-        // capsCodeText: welcomeCode.code,
 
         "capsCodeInputs": {
           "ccc_project-0": {
@@ -300,7 +299,6 @@
                 "en": "Add children items"
               },
               "capsIptCapsDfCode": "() => {const textStyle = {fontSize: 20,color: '#fff2',textAlign:'center',maxWidth: 200,};return (<RN.Text style={textStyle}>{'Adicione Elementos nessa tela!'}</RN.Text>);}",
-              // maxWidth: '200px'<= #ATTENTION: Native ERROR! No string!
               "capsIptCapsTypesToAdd": ["Elemento de Tela"]
             }
           },
@@ -347,7 +345,6 @@
         "capsCodeText": "(...args) => <DynView pass={{elementsProperties:[!#!1!#!],styles:[!#!2!#!],variablePath:[!#!3!#!],expectedVal:[!#!4!#!],childrenItems:[!#!5!#!],args,}}/>",
 
         "capsCodeInputs": {
-          // ---------- element properties
           "ccc_dynView-0": {
             "capsIptCodeID": "ccc_dynView-0",
             "capsIptPosition": "0",
@@ -365,7 +362,7 @@
               "capsIptCapsTypesToAdd": ["Propriedade Caixa"]
             }
           },
-          // ---------- element styles
+
           "ccc_dynView-1": {
             "capsIptCodeID": "ccc_dynView-1",
             "capsIptPosition": "1",
@@ -390,7 +387,7 @@
               ]
             }
           },
-          // ---------- variable path
+
           "ccc_dynView-2": {
             "capsIptPosition": "2",
             "capsIptCodeID": "ccc_dynView-2",
@@ -410,7 +407,7 @@
               "capsIptCapsDfCode": " "
             }
           },
-          // ---------- variable value
+
           "ccc_dynView-3": {
             "capsIptPosition": "3",
             "capsIptCodeID": "ccc_dynView-3",
@@ -432,7 +429,7 @@
               "capsIptCapsTypesToAdd": ["string process"]
             }
           },
-          // ---------- text value
+
           "ccc_dynView-4": {
             "capsIptPosition": "4",
             "capsIptCodeID": "ccc_dynView-4",
@@ -488,7 +485,6 @@
         "capsCodeText": "(...args) => <Text pass={{arrProps: [!#!Elements Properties!#!],arrStyles: [!#!Styles!#!],children: [!#!Text Value!#!],args,}}/>",
 
         "capsCodeInputs": {
-          // ---------- element properties
           "ccc_text-0": {
             "capsIptCodeID": "ccc_text-0",
             "capsIptPosition": "0",
@@ -506,7 +502,7 @@
               "capsIptCapsTypesToAdd": ["Propriedade Texto"]
             }
           },
-          // ---------- element styles
+
           "ccc_text-1": {
             "capsIptCodeID": "ccc_text-1",
             "capsIptPosition": "1",
@@ -521,7 +517,7 @@
               "capsIptCapsTypesToAdd": ["Estilo Texto"]
             }
           },
-          // ---------- text value
+
           "ccc_text-2": {
             "capsIptCodeID": "ccc_text-2",
             "capsIptPosition": "2",
@@ -560,7 +556,7 @@
       "capsUserID": "xxx1"
     }
   },
-  // backgroundColor - Cor de Fundo
+
   "fmmSzO0wRHS5RRy7Vm7g": {
     "capsDB": {
       "capsID": "fmmSzO0wRHS5RRy7Vm7g",
