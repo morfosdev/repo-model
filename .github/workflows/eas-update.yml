@@ -12,28 +12,26 @@ jobs:
       - name: Checkout repository
         id: get_repo
         uses: actions/checkout@v3
-      
             
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-      
             
       - name: Setup EAS
         uses: expo/expo-github-action@v8
         with:
           eas-version: latest
           token: ${{ secrets.EXPOTOKEN }}
-      
             
       - name: Install dependencies
         run: yarn install
-      
+
+      - name: Install Firebase
+        run: npm install firebase-admin
             
       - name: Configure EAS project
         run: eas init --id ${{ secrets.EXPOPROJECTID }} --non-interactive
-      
             
       - name: Create preview
         id: preview
@@ -41,8 +39,39 @@ jobs:
         with:
           command: eas update --auto
       
-      - name: Set Qr Code
+      - name: Save Firebase Admin SDK credentials
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${chaveFB}
+        run: echo "$FIREBASE_SERVICE_ACCOUNT" | jq '.' > firebase-admin-sdk.json
+
+      - name: Update QR Code in Firestore
+        env:
+          USERID: ${userID}
+          PROJECTID: ${projectID}
+          QR_CODE_URL: ${qrCode}
         run: |
-          curl --location --request GET 'https://us-central1-flaxboll.cloudfunctions.net/fireUserUpdateQr' \
-          --header 'Content-Type: text/plain' \
-          --data '{"qrcodeUrl":"${{ steps.preview.outputs.qr }}","userID":"${{ secrets.USERID }}","projectID":"${{ secrets.PROJECTID }}"}'
+          node -e "
+          const admin = require('firebase-admin');
+          const serviceAccount = require('./firebase-admin-sdk.json');
+
+          admin.initializeApp({
+            credential: admin.credential.cert(serviceAccount)
+          });
+
+          const db = admin.firestore();
+
+          const updateQrCode = async () => {
+            const userId = process.env.USERID;
+            const projectId = process.env.PROJECTID;
+            const qrCodeUrl = process.env.QR_CODE_URL;
+
+            const docRef = db.collection('users').doc(userId).collection  ('projects').doc(projectId);
+            await docRef.update({
+              qrcodeUrl: qrCodeUrl
+            });
+
+            console.log('QR Code updated successfully.');
+          };
+
+          updateQrCode().catch(console.error);
+          "
