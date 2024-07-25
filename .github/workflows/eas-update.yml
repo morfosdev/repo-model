@@ -111,14 +111,14 @@ jobs:
 
       - name: Save Firebase Admin SDK credentials
         env:
-          FIREBASE_SERVICE_ACCOUNT: ${chaveFB}
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: echo "$FIREBASE_SERVICE_ACCOUNT" | jq '.' > firebase-admin-sdk.json
 
       - name: Update QR Code in Firestore
         env:
-          USERID: ${userID}
-          PROJECTID: ${projectID}
-          QR_CODE_URL: ${qrCode}
+          USERID: ${{ secrets.USERID }}
+          PROJECTID: ${{ secrets.PROJECTID }}
+          QR_CODE_URL: ${{ steps.preview.outputs.qr }}
         run: |
           node -e "
           const admin = require('firebase-admin');
@@ -134,9 +134,6 @@ jobs:
             const userId = process.env.USERID;
             const projectId = process.env.PROJECTID;
             const qrCodeUrl = process.env.QR_CODE_URL;
-
-            console.log({userId})
-            console.log({projectId})
 
             const docRef = db.collection('users').doc(userId).collection  ('projects').doc(projectId);
             await docRef.update({
