@@ -26,17 +26,10 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "extra": {
-      "eas": {
-        "projectId": "491f859e-1eb1-4af9-8877-a26feeb1c58e"
-      }
-    },
+    "extra": {},
     "owner": "morfos",
     "runtimeVersion": {
       "policy": "appVersion"
     },
-    "updates": {
-      "url": "https://u.expo.dev/491f859e-1eb1-4af9-8877-a26feeb1c58e"
-    }
   }
 }
