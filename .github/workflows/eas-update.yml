@@ -21,7 +21,7 @@ jobs:
         uses: expo/expo-github-action@v8
         with:
           eas-version: latest
-          token: Et3iYIoDnKOv7AnzwcXu3xGf0dZjVctFgEKa5cj0
+          token: ADD TOKEN ----------------
 
       - name: Install dependencies
         run: |
