@@ -1,3 +1,4 @@
+
 name: Update expo
 on: [push]
 
@@ -17,11 +18,28 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Read JSON file
+        id: read_json
+        run: |
+          tokenEas=$(jq -r '.tokenEas' src/data.json)
+          userID=$(jq -r '.userID' src/data.json)
+          projectID=$(jq -r '.projectID' src/data.json)
+          echo "tokenEas=$tokenEas" >> $GITHUB_ENV
+          echo "userID=$userID" >> $GITHUB_ENV
+          echo "projectID=$projectID" >> $GITHUB_ENV
+        shell: bash
+
+      - name: Use variables
+        run: |
+          echo "tokenEas is ${{ env.tokenEas }}"
+          echo "userID is ${{ env.userID }}"
+          echo "projectID is ${{ env.projectID }}"
+         
       - name: Setup EAS
         uses: expo/expo-github-action@v8
         with:
           eas-version: latest
-          token: ${{ secrets.TOKEN_EXPO }}
+          token: ${{ env.tokenEas }}
 
       - name: Install dependencies
         run: |
@@ -68,10 +86,10 @@ jobs:
         run: |
           if grep -q 'Project successfully linked' eas_init_output.txt; then
             echo "Encontrado 'Project successfully linked'"
-            projectId=$(grep -oP 'Project successfully linked \(ID: [a-f0-9-]+\)' eas_init_output.txt | awk -F 'ID: ' '{print $2}' | tr -d ')')
+            projectId=$(grep -oP 'Project successfully linked (ID: [a-f0-9-]+)' eas_init_output.txt | awk -F 'ID: ' '{print $2}' | tr -d ')')
           elif grep -q 'Existing project found' eas_init_output.txt; then
             echo "Encontrado 'Existing project found'"
-            projectId=$(grep -oP 'Existing project found: @[^ ]* \(ID: [a-f0-9-]+\)' eas_init_output.txt | awk -F 'ID: ' '{print $2}' | tr -d ')')
+            projectId=$(grep -oP 'Existing project found: @[^ ]* (ID: [a-f0-9-]+)' eas_init_output.txt | awk -F 'ID: ' '{print $2}' | tr -d ')')
           else
             echo "Erro: Project ID não encontrado na saída."
             exit 1
@@ -109,39 +127,26 @@ jobs:
         with:
           command: eas update --auto
 
+      - name: Read file content
+        id: read_file
+        run: |
+          file_content=$(jq -r '.file_content' src/fbJson.json)
+          echo "file_content=$file_content" >> $GITHUB_ENV
+        
+      - name: Use file content
+        run: |
+          echo "File content: ${{ steps.read_file.outputs.content }}"
+
       - name: Save Firebase Admin SDK credentials
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: echo "$FIREBASE_SERVICE_ACCOUNT" | jq '.' > firebase-admin-sdk.json
 
-      - name: Update QR Code in Firestore
+      - name: Run Firebase Script
         env:
-          USERID: ${{ secrets.USERID }}
-          PROJECTID: ${{ secrets.PROJECTID }}
-          QR_CODE_URL: ${{ steps.preview.outputs.qr }}
+            USERID: ${{ env.userID }}
+            PROJECTID: ${{ env.projectID }}
+            QR_CODE_URL: ${{ steps.preview.outputs.qr }}
         run: |
-          node -e "
-          const admin = require('firebase-admin');
-          const serviceAccount = require('./firebase-admin-sdk.json');
-
-          admin.initializeApp({
-            credential: admin.credential.cert(serviceAccount)
-          });
-
-          const db = admin.firestore();
-
-          const updateQrCode = async () => {
-            const userId = process.env.USERID;
-            const projectId = process.env.PROJECTID;
-            const qrCodeUrl = process.env.QR_CODE_URL;
-
-            const docRef = db.collection('users').doc(userId).collection  ('projects').doc(projectId);
-            await docRef.update({
-              qrcodeUrl: qrCodeUrl
-            });
-
-            console.log('QR Code updated successfully.');
-          };
-
-          updateQrCode().catch(console.error);
-          "
+          node src/update-firebase.js
+    
