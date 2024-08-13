@@ -35,6 +35,17 @@ jobs:
           eas-version: latest
           token: ${{ env.tokenEas }}
 
+      - name: Cache Node.js modules
+        id: yarn-cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            **/node_modules
+            ~/.cache/yarn
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
       - name: Install dependencies
         run: |
           yarn install
