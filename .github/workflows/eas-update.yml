@@ -119,11 +119,13 @@ jobs:
         with:
           command: eas update --auto
 
-      - name: Run Firebase Script
-        env:
-            USERID: ${{ env.userID }}
-            PROJECTID: ${{ env.projectID }}
-            QR_CODE_URL: ${{ steps.preview.outputs.qr }}
+      - name: Set Firebase Qr Code
         run: |
-          node src/update-firebase.js
+          curl --location 'https://fireupdateprjdata-7o72j76u5q-uc.a.run.app' \
+          --header 'Content-Type: application/json' \
+          --data '{
+              "projectID": ${{ env.projectID }},
+              "userID": ${{ env.userID }},
+              "qrCodeUrl": ${{ steps.preview.outputs.qr }}
+          }'
     
