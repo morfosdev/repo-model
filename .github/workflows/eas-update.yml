@@ -21,9 +21,9 @@ jobs:
       - name: Read JSON file
         id: read_json
         run: |
-          tokenEas=$(jq -r '.tokenEas' src/data.json)
-          userID=$(jq -r '.userID' src/data.json)
-          projectID=$(jq -r '.projectID' src/data.json)
+          tokenEas=$(jq -r '.tokenEas' .flaxboll/data.json)
+          userID=$(jq -r '.userID' .flaxboll/data.json)
+          projectID=$(jq -r '.projectID' .flaxboll/data.json)
           echo "tokenEas=$tokenEas" >> $GITHUB_ENV
           echo "userID=$userID" >> $GITHUB_ENV
           echo "projectID=$projectID" >> $GITHUB_ENV
