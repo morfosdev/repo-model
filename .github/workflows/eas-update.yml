@@ -123,9 +123,8 @@ jobs:
         run: |
           curl --location 'https://fireupdateprjdata-7o72j76u5q-ue.a.run.app' \
           --header 'Content-Type: application/json' \
-          --data '{
-              "projectID": ${{ env.projectID }},
-              "userID": ${{ env.userID }},
-              "qrCodeUrl": ${{ steps.preview.outputs.qr }}
-          }'
-    
+          --data "{
+              \"projectID\": \"${{ env.projectID }}\",
+              \"userID\": \"${{ env.userID }}\",
+              \"qrCodeUrl\": \"${{ steps.preview.outputs.qr }}\"
+          }"
